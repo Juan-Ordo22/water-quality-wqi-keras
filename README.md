@@ -458,7 +458,7 @@ Las principales conclusiones son:
 
 ---
 
-## 24. Cómo ejecutar el proyecto
+## 22. Cómo ejecutar el proyecto
 
 1. Clonar el repositorio.
 
