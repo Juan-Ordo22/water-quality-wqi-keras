@@ -491,8 +491,6 @@ Las siguientes fuentes fueron consultadas como apoyo conceptual para la construc
 Acaddemia. (s.f.). *Métricas de Machine Learning: guía para evaluación de modelos*. Acaddemia.  
 Fuente utilizada para apoyar la explicación de métricas de evaluación como `MAE`, `MSE`, `RMSE` y `R²`, empleadas para analizar el desempeño del modelo de regresión.
 
-> Nota: esta fuente fue usada como referencia conceptual general sobre métricas de evaluación. Se recomienda verificar manualmente el contenido antes de la entrega final.
-
 ### Regresión con redes neuronales
 
 Verma, N. (2023, noviembre 7). *Neural Network Regression Implementation and Visualization in Python*. Medium.  
