@@ -482,3 +482,60 @@ jupyter notebook
 4. Ejecutar el cuaderno en orden desde la primera celda.
 
 ---
+## 23. Bibliografía y fuentes consultadas
+
+Las siguientes fuentes fueron consultadas como apoyo conceptual para la construcción, mejora y análisis del modelo de Machine Learning aplicado al índice de calidad del agua `WQI`.
+
+### Métricas de evaluación de modelos
+
+Acaddemia. (s.f.). *Métricas de Machine Learning: guía para evaluación de modelos*. Acaddemia.  
+Fuente utilizada para apoyar la explicación de métricas de evaluación como `MAE`, `MSE`, `RMSE` y `R²`, empleadas para analizar el desempeño del modelo de regresión.
+
+> Nota: esta fuente fue usada como referencia conceptual general sobre métricas de evaluación. Se recomienda verificar manualmente el contenido antes de la entrega final.
+
+### Regresión con redes neuronales
+
+Verma, N. (2023, noviembre 7). *Neural Network Regression Implementation and Visualization in Python*. Medium.  
+Fuente utilizada para fundamentar la implementación de una red neuronal aplicada a problemas de regresión. Esta referencia fue útil para comprender que, en una regresión con redes neuronales, la salida del modelo corresponde a un valor numérico continuo, como ocurre en este proyecto con la predicción del índice `WQI`.
+
+También sirvió como apoyo para justificar el uso de una capa de salida lineal, la división entre entrenamiento y prueba, el uso de funciones de pérdida como `MSE` y la evaluación mediante métricas como `MAE`, `RMSE` y `R²`.
+
+### Optimizador Adam
+
+DataCamp. (2024, agosto 30). *Tutorial del Optimizador Adam: intuición e implementación en Python*. DataCamp.  
+Fuente utilizada para justificar el uso del optimizador `Adam` en el entrenamiento de la red neuronal. Adam es un algoritmo de optimización ampliamente usado en aprendizaje profundo, ya que adapta la tasa de aprendizaje de cada parámetro y combina ideas de técnicas como Momentum y RMSprop.
+
+En este proyecto se utilizó `Adam` porque permite un entrenamiento eficiente y estable de la red neuronal de regresión.
+
+### Regresión lineal y fundamentos de modelos de regresión
+
+Google for Developers. (s.f.). *Regresión lineal*. Machine Learning Crash Course.  
+Fuente utilizada como apoyo para comprender los fundamentos de los modelos de regresión, en los cuales el objetivo es predecir un valor numérico continuo. Aunque el modelo final del proyecto utiliza una red neuronal, la idea base sigue siendo un problema de regresión, ya que se busca estimar el valor del índice `WQI`.
+
+### Función de activación ReLU
+
+Krishnamurthy, B. (2024, febrero 26). *An Introduction to the ReLU Activation Function*. Built In.  
+Fuente utilizada para justificar el uso de la función de activación `ReLU` en las capas ocultas del modelo. ReLU introduce no linealidad en la red neuronal, permitiendo que el modelo aprenda relaciones más complejas entre las variables de entrada y el índice `WQI`.
+
+En el modelo desarrollado, `ReLU` se utilizó en las capas densas ocultas, mientras que la capa de salida utilizó activación lineal por tratarse de un problema de regresión.
+
+### Introducción práctica a redes neuronales artificiales
+
+Curo De La Cruz, W. (2024, octubre 5). *Crea tu primera Red Neuronal Artificial*. Apuntes de Walther Curo.  
+Fuente utilizada como apoyo práctico para comprender la estructura general de una red neuronal artificial y el flujo básico de trabajo en un cuaderno de Python: preparación de datos, definición del modelo, entrenamiento y análisis de resultados.
+
+Esta fuente fue útil como apoyo general para documentar la construcción del modelo en Keras.
+
+### Redes neuronales
+
+Google for Developers. (s.f.). *Redes neuronales*. Machine Learning Crash Course.  
+Fuente utilizada para reforzar los conceptos generales sobre redes neuronales dentro del aprendizaje automático. Esta referencia apoya la explicación de cómo una red neuronal utiliza capas, neuronas y funciones de activación para aprender relaciones entre variables de entrada y una salida esperada.
+
+En este proyecto, estos conceptos se aplican al entrenamiento de una red neuronal para predecir el índice `WQI`.
+
+### Transformación logarítmica e ingeniería de características
+
+APXML. (s.f.). *Log Transformation for Skewed Data*. APXML.  
+Fuente utilizada para justificar la aplicación de la transformación logarítmica `log1p` sobre las variables `CONDUCTIVITY` y `FECAL_COLIFORM`.
+
+Esta transformación fue aplicada porque dichas variables presentaban alta dispersión y posibles valores extremos. El uso de `log1p` permitió reducir el impacto de valores muy grandes y mejorar el desempeño del modelo de regresión.
